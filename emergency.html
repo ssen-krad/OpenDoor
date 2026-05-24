@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Emergency help if you are facing domestic violence in India right now. Call 181, 112, or 1098. Step-by-step guide to leave safely and file a complaint.">
+  <title>Emergency Help — Open Door</title>
+    <link rel="icon" href="https://www.google.com/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="css/style.css">
+  <style>
+    body{background:#0d1117;color:#eee}
+    #em-header{background:#0d1117;border-bottom:2px solid var(--danger);padding:12px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;position:sticky;top:0;z-index:100}
+    #em-logo{font-weight:700;font-size:18px;color:#fff;text-decoration:none;display:flex;align-items:center;gap:8px}
+    #em-logo span{color:#e57373}
+    #em-back{font-size:13px;color:#999;text-decoration:none;padding:6px 12px;border:1px solid #444;border-radius:6px}
+    #em-back:hover{color:#fff;border-color:#888;text-decoration:none}
+    #quick-exit{background:var(--danger);font-size:12px;padding:7px 13px}
+    .crisis-banner{background:linear-gradient(135deg,#5a0f0f 0%,var(--danger) 100%);padding:48px 20px 36px;text-align:center}
+    .crisis-banner h1{font-size:26px;color:#fff;font-weight:700;line-height:1.35;max-width:680px;margin:0 auto 14px}
+    .crisis-banner p{color:rgba(255,255,255,.82);font-size:15px;max-width:540px;margin:0 auto 26px}
+    .crisis-hotlines{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+    .hotline-pill{background:rgba(255,255,255,.15);border:2px solid rgba(255,255,255,.4);border-radius:50px;padding:9px 20px;color:#fff;font-weight:700;font-size:15px;text-decoration:none;transition:background .2s}
+    .hotline-pill:hover{background:rgba(255,255,255,.26);text-decoration:none}
+    .calm-note{background:#151b2a;border-left:4px solid #e8c34a;padding:16px 22px;font-size:14px;color:#e8d88a;text-align:center}
+    .em-steps{padding:36px 20px 56px;max-width:780px;margin:0 auto}
+    .em-step{background:#151b2a;border:1.5px solid #252d45;border-radius:14px;margin-bottom:18px;overflow:hidden}
+    .em-step-header{display:flex;align-items:center;gap:14px;padding:18px 22px}
+    .em-step-num{background:var(--danger);color:#fff;font-weight:700;font-size:13px;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .em-step-title{font-size:17px;font-weight:700;color:#f0f0f0;flex:1}
+    .em-step-icon{font-size:22px;flex-shrink:0}
+    .em-step-body{padding:0 22px 22px 66px;font-size:14px;color:#c0c0cc;line-height:1.7}
+    .em-step-body ul{padding-left:16px;margin:10px 0}
+    .em-step-body li{margin-bottom:9px;color:#c0c0cc}
+    .em-step-body strong{color:#fff}
+    .em-step-body a{color:#74b9ff}
+    .em-tip{background:rgba(44,94,84,.18);border-left:3px solid #2c5e54;border-radius:0 6px 6px 0;padding:10px 14px;margin:12px 0;font-size:13px;color:#a8d8da}
+    .em-warning{background:rgba(212,160,23,.1);border-left:3px solid #d4a017;border-radius:0 6px 6px 0;padding:10px 14px;margin:12px 0;font-size:13px;color:#e8d88a}
+    .em-danger{background:rgba(184,74,57,.18);border-left:3px solid var(--danger);border-radius:0 6px 6px 0;padding:10px 14px;margin:12px 0;font-size:13px;color:#e8a090}
+    .em-emotional{background:#111620;border:1.5px solid #252d45;border-radius:14px;padding:26px;margin-bottom:18px}
+    .em-emotional h2{font-size:19px;color:#a78bfa;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+    .em-emotional li{color:#c0c0cc;margin-bottom:9px;font-size:14px}
+    .em-emotional strong{color:#e0d7ff}
+    .em-resources{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin-top:10px}
+    .em-resource-card{background:#111620;border:1.5px solid #252d45;border-radius:10px;padding:16px}
+    .em-resource-card h4{color:#a78bfa;font-size:14px;margin-bottom:7px}
+    .em-resource-card p{color:#999;font-size:12px;margin-bottom:9px}
+    .em-contact{background:rgba(44,94,84,.2);color:#74d4d8;font-weight:700;font-size:15px;padding:8px 10px;border-radius:6px;text-align:center;text-decoration:none;display:block}
+    .em-contact:hover{background:rgba(44,94,84,.4);text-decoration:none}
+    #em-footer{background:#080b10;border-top:1px solid #151b2a;padding:22px 20px;text-align:center;font-size:12px;color:#555}
+    #em-footer a{color:#74b9ff}
+    @media(max-width:768px){.crisis-banner h1{font-size:20px}.crisis-banner p{font-size:13px}.em-step-body{padding:0 16px 18px 16px}.em-step-title{font-size:15px}.em-step-header{padding:14px 16px}.em-step-num{width:26px;height:26px;font-size:11px}.em-emotional{padding:18px}.em-resources{grid-template-columns:1fr}.em-step{border-radius:10px}}@media(max-width:480px){.crisis-banner h1{font-size:18px}.hotline-pill{font-size:13px;padding:8px 14px;width:100%;justify-content:center;display:flex}.crisis-hotlines{flex-direction:column;align-items:stretch;gap:8px;padding:0 16px}.em-step-title{font-size:14px}}
+  </style>
+</head>
+<body>
+<button id="quick-exit" onclick="quickExit()">Quick Exit →</button>
+<header id="em-header">
+  <a href="index.html" id="em-logo">🚪 Open<span>Door</span></a>
+  <a href="index.html" id="em-back">← All guides</a>
+</header>
+<section class="crisis-banner">
+  <h1>I am in danger right now — what do I do?</h1>
+  <p>Take a breath. You are not alone. Work through these steps one at a time.</p>
+  <div class="crisis-hotlines">
+    <a href="tel:181" class="hotline-pill">📞 181 — Women's Helpline</a>
+    <a href="tel:112" class="hotline-pill">📞 112 — All Emergencies</a>
+    <a href="tel:1098" class="hotline-pill">📞 1098 — Childline</a>
+    <a href="tel:1930" class="hotline-pill">📞 1930 — Cyber Crime</a>
+  </div>
+</section>
+<div class="calm-note">⚠️ <strong>What happened is not your fault.</strong> Do not delete any messages or evidence yet — read Step 2 first.</div>
+<main>
+  <div class="em-steps">
+
+    <div class="em-step">
+      <div class="em-step-header"><div class="em-step-num">1</div><div class="em-step-title">If you are in immediate physical danger</div><div class="em-step-icon">🚨</div></div>
+      <div class="em-step-body">
+        <div class="em-danger">🚨 <strong>Call 112 immediately</strong> if you are being harmed or are in fear for your life right now.</div>
+        <ul>
+          <li><strong>Call 112</strong> — Works from any phone, even without SIM balance. Police, fire, ambulance.</li>
+          <li><strong>Call 181</strong> — Women's Helpline. Officers can dispatch police and connect you to a shelter.</li>
+          <li>If you cannot speak, text your exact address to someone trusted and ask them to call police.</li>
+          <li>Keep children with you or send them to a safe neighbour first.</li>
+        </ul>
+        <div class="em-tip">✅ You do not need to explain your full situation. Just give your address and say "I need help immediately."</div>
+      </div>
+    </div>
+
+    <div class="em-step">
+      <div class="em-step-header"><div class="em-step-num">2</div><div class="em-step-title">Preserve evidence — before anything else</div><div class="em-step-icon">📸</div></div>
+      <div class="em-step-body">
+        <div class="em-danger">🚨 <strong>Do NOT delete messages or photos yet.</strong> You need them for an FIR and Protection Order.</div>
+        <ul>
+          <li>Screenshot threatening messages with the sender's name and date/time visible.</li>
+          <li>Photograph visible injuries with a timestamp.</li>
+          <li>Write down dates, what was said, and any witnesses while memory is fresh.</li>
+          <li>Save copies to a private Google Drive or iCloud account the abuser cannot access.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="em-step">
+      <div class="em-step-header"><div class="em-step-num">3</div><div class="em-step-title">Get to a safe location</div><div class="em-step-icon">🏠</div></div>
+      <div class="em-step-body">
+        <ul>
+          <li>Call <strong>181</strong> — they can arrange transport to a free government shelter home (Swadhar Greh).</li>
+          <li>A neighbour, local temple/mosque, or a police station are immediate safe options.</li>
+          <li>Take: Aadhaar, phone + charger, cash, medicines, and children's documents.</li>
+        </ul>
+        <div class="em-tip">✅ Under PWDVA 2005, you have the right to remain in your matrimonial home. Police cannot remove you without a court order.</div>
+      </div>
+    </div>
+
+    <div class="em-step">
+      <div class="em-step-header"><div class="em-step-num">4</div><div class="em-step-title">File a complaint — Zero FIR or DV Act</div><div class="em-step-icon">📋</div></div>
+      <div class="em-step-body">
+        <ul>
+          <li><strong>Zero FIR:</strong> File at <em>any</em> police station in India — regardless of where the abuse happened. The station must accept it. Say: <em>"Main Zero FIR darz karna chahti hoon."</em></li>
+          <li><strong>PWDVA 2005 complaint:</strong> File with the Protection Officer (accessible via 181 or district court). Faster than criminal proceedings and grants you a Residence Order.</li>
+          <li><strong>Online:</strong> For digital threats, file at <a href="https://cybercrime.gov.in" target="_blank" rel="noopener">cybercrime.gov.in</a> or call 1930.</li>
+        </ul>
+        <div class="em-warning">⚠️ If police refuse to file an FIR (which is illegal), escalate to the District SP, or file online at cybercrime.gov.in.</div>
+      </div>
+    </div>
+
+    <div class="em-step">
+      <div class="em-step-header"><div class="em-step-num">5</div><div class="em-step-title">Tell one trusted person</div><div class="em-step-icon">🤝</div></div>
+      <div class="em-step-body">
+        <ul>
+          <li>Choose one person — a sister, friend, teacher — and tell them you need help.</li>
+          <li>"I am in an unsafe situation and I need support" is enough to say.</li>
+          <li>If you cannot tell anyone, call <strong>181</strong> — counsellors are confidential and trained for this.</li>
+        </ul>
+        <div class="em-tip">✅ iCall (TISS) — 9152987821 — Free mental health counselling, Mon–Sat 10am–8pm.</div>
+      </div>
+    </div>
+
+    <div class="em-emotional">
+      <h2>💜 What you might be feeling right now</h2>
+      <ul>
+        <li><strong>Shame or self-blame:</strong> Abuse is never the victim's fault. The abuser made the choice to harm you.</li>
+        <li><strong>Fear of not being believed:</strong> Document everything. Your experience is real and it matters.</li>
+        <li><strong>Grief for the relationship:</strong> It is possible to love someone and still need to leave for your safety.</li>
+        <li><strong>Pressure from family to stay:</strong> Your safety comes before social appearances. Call 181 — they can also counsel your family members.</li>
+        <li><strong>Worry about children:</strong> Courts grant interim custody to mothers in DV cases. Leaving does not mean losing your children.</li>
+      </ul>
+    </div>
+
+    <div class="em-step" style="padding-bottom:0">
+      <div class="em-step-header"><div class="em-step-num" style="background:#7c5cbf">→</div><div class="em-step-title">Emergency contacts</div><div class="em-step-icon">📞</div></div>
+      <div class="em-step-body">
+        <div class="em-resources">
+          <div class="em-resource-card"><h4>Women's Helpline</h4><p>24/7 crisis support, shelter referral, legal aid.</p><a href="tel:181" class="em-contact">📞 181 (Free, 24/7)</a></div>
+          <div class="em-resource-card"><h4>All Emergencies</h4><p>Police, fire, ambulance. Works without balance.</p><a href="tel:112" class="em-contact">📞 112</a></div>
+          <div class="em-resource-card"><h4>Childline</h4><p>For children in danger or adults concerned about a child.</p><a href="tel:1098" class="em-contact">📞 1098 (Free, 24/7)</a></div>
+          <div class="em-resource-card"><h4>Cyber Crime</h4><p>Digital threats, blackmail, image sharing.</p><a href="tel:1930" class="em-contact">📞 1930</a></div>
+          <div class="em-resource-card"><h4>NCW WhatsApp</h4><p>National Commission for Women — complaint line.</p><a href="tel:14490" target="_blank" rel="noopener" class="em-contact">📲 14490</a></div>
+          <div class="em-resource-card"><h4>iCall (TISS)</h4><p>Free counselling for DV trauma. Confidential.</p><a href="tel:9152987821" class="em-contact">📞 9152987821</a></div>
+        </div>
+        <div style="height:20px"></div>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:28px;padding-bottom:16px">
+      <a href="legal-rights.html" style="color:#74b9ff;font-size:14px">← Your legal rights</a> &nbsp;·&nbsp;
+      <a href="safety-planning.html" style="color:#74b9ff;font-size:14px">Safety Planning →</a>
+    </div>
+  </div>
+</main>
+<footer id="em-footer">
+  <p>🔒 This page uses no cookies and collects no data.</p>
+  <p style="margin-top:7px;line-height:1.6"><strong>Disclaimer:</strong> Information resource only — not legal advice. In immediate danger, call 112 or 181 immediately.</p>
+  <p style="margin-top:7px"><a href="index.html">← Open Door Home</a></p>
+  <p style="margin-top:12px;font-size:11px;color:#444;border-top:1px solid #1a1f2e;padding-top:10px">🔑 <strong>Safety tip:</strong> Press <kbd style="background:#222;border:1px solid #555;border-radius:3px;padding:1px 5px;font-size:10px;color:#ccc">Esc</kbd> at any time to instantly leave this site and go to Google.</p>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="आपातकालीन सहायता — भारत में घरेलू हिंसा का सामना कर रही हैं? 181, 112, 1098 पर कॉल करें। सुरक्षित रूप से जाने के लिए चरण-दर-चरण मार्गदर्शिका।">
+  <title>आपातकालीन सहायता — Open Door</title>
+  <link rel="icon" href="https://www.google.com/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    body{background:#0d1117;color:#eee}
+    #em-header{background:#0d1117;border-bottom:2px solid var(--danger);padding:12px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;position:sticky;top:0;z-index:100}
+    #em-logo{font-weight:700;font-size:18px;color:#fff;text-decoration:none;display:flex;align-items:center;gap:8px}
+    #em-logo span{color:#e57373}
+    #em-back{font-size:13px;color:#999;text-decoration:none;padding:6px 12px;border:1px solid #444;border-radius:6px}
+    #em-back:hover{color:#fff;border-color:#888;text-decoration:none}
+    #quick-exit{background:var(--danger);font-size:12px;padding:7px 13px}
+    .crisis-banner{background:linear-gradient(135deg,#5a0f0f 0%,var(--danger) 100%);padding:48px 20px 36px;text-align:center}
+    .crisis-banner h1{font-size:24px;color:#fff;font-weight:700;line-height:1.35;max-width:680px;margin:0 auto 14px}
+    .crisis-banner p{color:rgba(255,255,255,.82);font-size:15px;max-width:540px;margin:0 auto 26px}
+    .crisis-hotlines{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+    .hotline-pill{background:rgba(255,255,255,.15);border:2px solid rgba(255,255,255,.4);border-radius:50px;padding:9px 20px;color:#fff;font-weight:700;font-size:15px;text-decoration:none;transition:background .2s}
+    .hotline-pill:hover{background:rgba(255,255,255,.26);text-decoration:none}
+    .calm-note{background:#151b2a;border-left:4px solid #e8c34a;padding:16px 22px;font-size:14px;color:#e8d88a;text-align:center}
+    .em-steps{padding:36px 20px 56px;max-width:780px;margin:0 auto}
+    .em-step{background:#151b2a;border:1.5px solid #252d45;border-radius:14px;margin-bottom:18px;overflow:hidden}
+    .em-step-header{display:flex;align-items:center;gap:14px;padding:18px 22px}
+    .em-step-num{background:var(--danger);color:#fff;font-weight:700;font-size:13px;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .em-step-title{font-size:17px;font-weight:700;color:#f0f0f0;flex:1}
+    .em-step-icon{font-size:22px;flex-shrink:0}
+    .em-step-body{padding:0 22px 22px 66px;font-size:14px;color:#c0c0cc;line-height:1.7}
+    .em-step-body ul{padding-left:16px;margin:10px 0}
+    .em-step-body li{margin-bottom:9px;color:#c0c0cc}
+    .em-step-body strong{color:#fff}
+    .em-step-body a{color:#74b9ff}
+    .em-tip{background:rgba(44,94,84,.18);border-left:3px solid #2c5e54;border-radius:0 6px 6px 0;padding:10px 14px;margin:12px 0;font-size:13px;color:#a8d8da}
+    .em-warning{background:rgba(212,160,23,.1);border-left:3px solid #d4a017;border-radius:0 6px 6px 0;padding:10px 14px;margin:12px 0;font-size:13px;color:#e8d88a}
+    .em-danger{background:rgba(184,74,57,.18);border-left:3px solid var(--danger);border-radius:0 6px 6px 0;padding:10px 14px;margin:12px 0;font-size:13px;color:#e8a090}
+    .em-emotional{background:#111620;border:1.5px solid #252d45;border-radius:14px;padding:26px;margin-bottom:18px}
+    .em-emotional h2{font-size:19px;color:#a78bfa;margin-bottom:14px;display:flex;align-items:center;gap:10px}
+    .em-emotional li{color:#c0c0cc;margin-bottom:9px;font-size:14px}
+    .em-emotional strong{color:#e0d7ff}
+    .em-resources{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:10px}
+    .em-resource-card{background:#111620;border:1.5px solid #252d45;border-radius:10px;padding:16px}
+    .em-resource-card h4{color:#a78bfa;font-size:14px;margin-bottom:7px}
+    .em-resource-card p{color:#999;font-size:12px;margin-bottom:9px}
+    .em-contact{background:rgba(44,94,84,.2);color:#74d4d8;font-weight:700;font-size:15px;padding:8px 10px;border-radius:6px;text-align:center;text-decoration:none;display:block}
+    .em-contact:hover{background:rgba(44,94,84,.4);text-decoration:none}
+    #em-footer{background:#080b10;border-top:1px solid #151b2a;padding:22px 20px;text-align:center;font-size:12px;color:#555}
+    #em-footer a{color:#74b9ff}
+    @media(max-width:768px){.crisis-banner h1{font-size:20px}.crisis-banner p{font-size:13px}.em-step-body{padding:0 16px 18px 16px}.em-step-title{font-size:15px}.em-step-header{padding:14px 16px}.em-step-num{width:26px;height:26px;font-size:11px}.em-emotional{padding:18px}.em-resources{grid-template-columns:1fr}.em-step{border-radius:10px}}@media(max-width:480px){.crisis-banner h1{font-size:18px}.hotline-pill{font-size:13px;padding:8px 14px;width:100%;justify-content:center;display:flex}.crisis-hotlines{flex-direction:column;align-items:stretch;gap:8px;padding:0 16px}.em-step-title{font-size:14px}}
+  </style>
+</head>
+<body>
+<button id="quick-exit" onclick="quickExit()">त्वरित निकास →</button>
+<header id="em-header">
+  <a href="index.html" id="em-logo">🚪 Open<span>Door</span></a>
+  <a href="index.html" id="em-back">← सभी गाइड</a>
+</header>
+<section class="crisis-banner">
+  <h1>मैं अभी खतरे में हूँ — मुझे क्या करना चाहिए?</h1>
+  <p>एक गहरी सांस लें। आप अकेली नहीं हैं। इन चरणों को एक-एक करके पूरा करें।</p>
+  <div class="crisis-hotlines">
+    <a href="tel:181" class="hotline-pill">📞 181 — महिला हेल्पलाइन</a>
+    <a href="tel:112" class="hotline-pill">📞 112 — सभी आपातकाल</a>
+    <a href="tel:1098" class="hotline-pill">📞 1098 — चाइल्डलाइन</a>
+    <a href="tel:1930" class="hotline-pill">📞 1930 — साइबर क्राइम</a>
+  </div>
+</section>
+<div class="calm-note">⚠️ <strong>जो हुआ वह आपकी गलती नहीं है।</strong> कोई भी संदेश या सबूत अभी तक न हटाएँ — पहले चरण 2 पढ़ें।</div>
+<main><div class="em-steps">
+
+  <div class="em-step">
+    <div class="em-step-header"><div class="em-step-num">1</div><div class="em-step-title">यदि आप तत्काल शारीरिक खतरे में हैं</div><div class="em-step-icon">🚨</div></div>
+    <div class="em-step-body">
+      <div class="em-danger">🚨 <strong>अभी 112 पर कॉल करें</strong> यदि आप पर हमला हो रहा है या आपको अपनी जान का डर है।</div>
+      <ul>
+        <li><strong>112 पर कॉल करें</strong> — बिना SIM बैलेंस के भी काम करता है। पुलिस, फायर, एम्बुलेंस।</li>
+        <li><strong>181 पर कॉल करें</strong> — महिला हेल्पलाइन। अधिकारी पुलिस भेज सकते हैं और आपको आश्रय से जोड़ सकते हैं।</li>
+        <li>यदि आप बोल नहीं सकतीं, किसी विश्वसनीय व्यक्ति को अपना पूरा पता WhatsApp या SMS करें।</li>
+        <li>बच्चों को अपने साथ रखें या पहले किसी सुरक्षित पड़ोसी के पास भेजें।</li>
+      </ul>
+      <div class="em-tip">✅ आपको पूरी स्थिति समझाने की जरूरत नहीं है। बस अपना पता दें और कहें "मुझे मदद चाहिए।"</div>
+    </div>
+  </div>
+
+  <div class="em-step">
+    <div class="em-step-header"><div class="em-step-num">2</div><div class="em-step-title">सबूत सुरक्षित रखें — सबसे पहले</div><div class="em-step-icon">📸</div></div>
+    <div class="em-step-body">
+      <div class="em-danger">🚨 <strong>कोई भी संदेश, फोटो या पोस्ट अभी न हटाएँ।</strong> FIR और Protection Order के लिए सबूत जरूरी है।</div>
+      <ul>
+        <li>धमकी भरे संदेशों का screenshot लें — प्रेषक का नाम और तारीख/समय दिखता हो।</li>
+        <li>चोटों की तस्वीरें लें — timestamp के साथ यदि संभव हो।</li>
+        <li>क्या हुआ, कब हुआ, गवाह कौन थे — सब लिख लें जब याददाश्त ताजी हो।</li>
+        <li>प्राइवेट Google Drive या iCloud पर कॉपियाँ सेव करें जिसे दुर्व्यवहारी नहीं जानता।</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="em-step">
+    <div class="em-step-header"><div class="em-step-num">3</div><div class="em-step-title">सुरक्षित स्थान पर जाएँ</div><div class="em-step-icon">🏠</div></div>
+    <div class="em-step-body">
+      <ul>
+        <li><strong>181 पर कॉल करें</strong> — वे आपको निःशुल्क सरकारी आश्रय गृह (स्वाधार गृह) तक पहुँचा सकते हैं।</li>
+        <li>कोई पड़ोसी, नजदीकी मंदिर/मस्जिद/चर्च, या पुलिस स्टेशन तत्काल सुरक्षित विकल्प हैं।</li>
+        <li>साथ लें: आधार कार्ड, फोन + चार्जर, नकदी, दवाएं, बच्चों के दस्तावेज।</li>
+      </ul>
+      <div class="em-tip">✅ PWDVA 2005 के तहत, आपको अपने वैवाहिक घर में रहने का अधिकार है। बिना कोर्ट आदेश के पुलिस आपको नहीं निकाल सकती।</div>
+    </div>
+  </div>
+
+  <div class="em-step">
+    <div class="em-step-header"><div class="em-step-num">4</div><div class="em-step-title">शिकायत दर्ज करें — Zero FIR या DV Act</div><div class="em-step-icon">📋</div></div>
+    <div class="em-step-body">
+      <ul>
+        <li><strong>Zero FIR:</strong> भारत के किसी भी पुलिस स्टेशन में शिकायत दर्ज करें — चाहे अपराध कहीं भी हुआ हो। कहें: <em>"मैं Zero FIR दर्ज करना चाहती हूँ।"</em></li>
+        <li><strong>PWDVA 2005 शिकायत:</strong> अपने जिले के Protection Officer से संपर्क करें (181 के जरिए या जिला न्यायालय से)। यह आपराधिक मामले से तेज है।</li>
+        <li><strong>ऑनलाइन (Cybercrime):</strong> डिजिटल उत्पीड़न के लिए <a href="https://cybercrime.gov.in" target="_blank" rel="noopener">cybercrime.gov.in</a> पर शिकायत करें या 1930 पर कॉल करें।</li>
+      </ul>
+      <div class="em-warning">⚠️ यदि पुलिस FIR दर्ज करने से मना करे (जो कि गैरकानूनी है), तो जिले के SP को शिकायत करें या cybercrime portal पर online दर्ज करें।</div>
+    </div>
+  </div>
+
+  <div class="em-step">
+    <div class="em-step-header"><div class="em-step-num">5</div><div class="em-step-title">किसी एक विश्वसनीय व्यक्ति को बताएँ</div><div class="em-step-icon">🤝</div></div>
+    <div class="em-step-body">
+      <ul>
+        <li>कोई एक — बहन, दोस्त, शिक्षक — जिसे आप सबसे ज्यादा भरोसा करती हैं, उसे बताएँ।</li>
+        <li>"मैं एक असुरक्षित स्थिति में हूँ और मुझे सहायता चाहिए" — बस इतना कहना काफी है।</li>
+        <li>यदि आप किसी को नहीं बता सकतीं, तो <strong>181</strong> पर कॉल करें — परामर्शदाता गोपनीय हैं।</li>
+      </ul>
+      <div class="em-tip">✅ iCall (TISS) — 9152987821 — निःशुल्क मानसिक स्वास्थ्य परामर्श, सोम–शनि 10am–8pm।</div>
+    </div>
+  </div>
+
+  <div class="em-emotional">
+    <h2>💜 अभी आप क्या महसूस कर रही होंगी</h2>
+    <ul>
+      <li><strong>शर्म या आत्म-दोष:</strong> दुर्व्यवहार कभी पीड़ित की गलती नहीं होती। दुर्व्यवहारी ने आपको नुकसान पहुँचाने का चुनाव किया।</li>
+      <li><strong>विश्वास न किए जाने का डर:</strong> सब कुछ दस्तावेज करें। आपका अनुभव वास्तविक है।</li>
+      <li><strong>रिश्ते के लिए दुख:</strong> किसी से प्यार करना और अपनी सुरक्षा के लिए जाना — दोनों एक साथ संभव है।</li>
+      <li><strong>परिवार का दबाव:</strong> आपकी सुरक्षा सामाजिक दिखावे से पहले है। 181 पर कॉल करें — वे परिवार को भी परामर्श दे सकते हैं।</li>
+      <li><strong>बच्चों की चिंता:</strong> DV मामलों में अदालतें माँ को अंतरिम हिरासत देती हैं। जाने का मतलब बच्चे खोना नहीं है।</li>
+    </ul>
+  </div>
+
+  <div class="em-step" style="padding-bottom:0">
+    <div class="em-step-header"><div class="em-step-num" style="background:#7c5cbf">→</div><div class="em-step-title">आपातकालीन संपर्क</div><div class="em-step-icon">📞</div></div>
+    <div class="em-step-body">
+      <div class="em-resources">
+        <div class="em-resource-card"><h4>महिला हेल्पलाइन</h4><p>24/7 संकट सहायता, आश्रय, कानूनी सहायता।</p><a href="tel:181" class="em-contact">📞 181 (निःशुल्क, 24/7)</a></div>
+        <div class="em-resource-card"><h4>सभी आपातकाल</h4><p>पुलिस, फायर, एम्बुलेंस। बिना बैलेंस काम करता है।</p><a href="tel:112" class="em-contact">📞 112</a></div>
+        <div class="em-resource-card"><h4>चाइल्डलाइन</h4><p>खतरे में बच्चों या किशोरों के लिए।</p><a href="tel:1098" class="em-contact">📞 1098 (24/7)</a></div>
+        <div class="em-resource-card"><h4>साइबर क्राइम</h4><p>डिजिटल धमकी, ब्लैकमेल, छवि साझाकरण।</p><a href="tel:1930" class="em-contact">📞 1930</a></div>
+        <div class="em-resource-card"><h4>NCW हेल्पलाइन</h4><p>राष्ट्रीय महिला आयोग — शिकायत और सहायता।</p><a href="tel:14490" class="em-contact">📞 14490 (24/7)</a></div>
+        <div class="em-resource-card"><h4>iCall (TISS)</h4><p>निःशुल्क मानसिक स्वास्थ्य परामर्श। गोपनीय।</p><a href="tel:9152987821" class="em-contact">📞 9152987821</a></div>
+      </div>
+      <div style="height:20px"></div>
+    </div>
+  </div>
+
+  <div style="text-align:center;margin-top:28px;padding-bottom:16px">
+    <a href="legal-rights.html" style="color:#74b9ff;font-size:14px">← आपके कानूनी अधिकार</a> &nbsp;·&nbsp;
+    <a href="safety-planning.html" style="color:#74b9ff;font-size:14px">सुरक्षा योजना →</a>
+  </div>
+</div></main>
+<footer id="em-footer">
+  <p>🔒 यह पेज कोई कुकीज़ उपयोग नहीं करता और कोई डेटा एकत्र नहीं करता।</p>
+  <p style="margin-top:7px;line-height:1.6"><strong>अस्वीकरण:</strong> यह एक सूचना संसाधन है, कानूनी सलाह नहीं। तत्काल खतरे में 112 या 181 पर तुरंत कॉल करें।</p>
+  <p style="margin-top:7px"><a href="index.html">← Open Door होम</a></p>
+  <p style="margin-top:12px;font-size:11px;color:#444;border-top:1px solid #1a1f2e;padding-top:10px">🔑 <strong>सुरक्षा सुझाव:</strong> किसी भी समय <kbd style="background:#222;border:1px solid #555;border-radius:3px;padding:1px 5px;font-size:10px;color:#ccc">Esc</kbd> दबाएँ और तुरंत Google पर जाएँ।</p>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>
+
